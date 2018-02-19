@@ -8,6 +8,7 @@ import ReduxPersist from '../Config/ReduxPersist'
 // Styles
 import styles from './Styles/RootContainerStyles'
 
+// This is the main Container from where REAL UI starts
 class RootContainer extends Component {
   componentDidMount () {
     // if redux persist is not active fire startup action

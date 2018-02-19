@@ -1,20 +1,17 @@
-import React, { Component } from "react";
-import { ScrollView, Text, Image, View } from "react-native";
-import DevscreensButton from "../../ignite/DevScreens/DevscreensButton.js";
+import React, { Component } from 'react'
+import { ScrollView, Text, Image, View } from 'react-native'
+import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 
-import Title from "../Components/todo/Title.js";
-import Footer from "../Components/todo/Footer.js";
-
-import { Images } from "../Themes";
+import { Images } from '../Themes'
 
 // Styles
-import styles from "./Styles/LaunchScreenStyles";
+import styles from './Styles/LaunchScreenStyles'
 
 export default class LaunchScreen extends Component {
-  render() {
+  render () {
     return (
       <View style={styles.mainContainer}>
-        {/* <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
             <Image source={Images.launch} style={styles.logo} />
@@ -28,10 +25,8 @@ export default class LaunchScreen extends Component {
           </View>
 
           <DevscreensButton />
-        </ScrollView> */}
-        <Title />
-        <Footer/>
+        </ScrollView>
       </View>
-    );
+    )
   }
 }
